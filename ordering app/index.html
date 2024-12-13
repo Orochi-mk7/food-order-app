@@ -1,0 +1,45 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <header role="img" aria-label="a tasty looking burger">
+        <div class="header-text">
+          <h1>Simba's Diner</h1>
+          <p>The best burgers and pizza in town</p>
+        </div>
+      </header>
+      <!-- Hero section -->
+       <section>
+        <div class="menu-list" id="menu-list">
+          <!--Menu list rendered by JS here-->
+        </div>       
+       </section>
+       <!-- check out section -->
+        <section class="basket" id="basket">
+          <h3>Your order</h3>
+          <div class="basket-list" id="basket-list">
+            
+          </div>
+          <div class="total-price-section">
+            <h5 >Total price:</h5>
+            <p class="menu-item-price" id="price-display"></p>
+          </div>
+          <button class="complete-btn" id="move-to-pay-btn">Complete order</button>
+        </section>
+        <!--pay screen-->
+        <section class="card-section" id="card-section">
+          <button class="close-card-section-btn" id="close-card-section-btn">x</button>
+          <h6>Enter card details</h6>
+          <form class="card-form">
+            <input type="text" placeholder="Enter your name" id="name-on-card" maxlength="25">
+            <input type="tel" maxlength="19" placeholder="Enter card number" id="card-number">
+            <input maxlength="3" type="tel" placeholder="Enter CVV" id="cvv" required>
+          </form>
+          <button class="complete-btn" id="card-submit-btn">pay</button>
+        </section>
+      
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
